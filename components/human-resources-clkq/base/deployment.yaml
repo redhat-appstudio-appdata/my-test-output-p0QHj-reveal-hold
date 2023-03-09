@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: human-resources-clkq
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:p0QHj-human-resources-clkq
+      - image: quay.io/redhat-appstudio/user-workload@sha256:f30f45fff9bdb8f5be6cef60228a7b17f766882a0a91c71de31adac498202c31
         name: my-java-springboot
         ports:
         - containerPort: 8081
