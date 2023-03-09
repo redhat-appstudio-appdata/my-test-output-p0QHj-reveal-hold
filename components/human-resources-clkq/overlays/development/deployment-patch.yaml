@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: human-resources-clkq
+  namespace: jephilli-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:f30f45fff9bdb8f5be6cef60228a7b17f766882a0a91c71de31adac498202c31
+        name: my-java-springboot
+        resources: {}
+status: {}
