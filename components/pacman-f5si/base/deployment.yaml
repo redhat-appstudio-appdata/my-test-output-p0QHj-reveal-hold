@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: pacman-f5si
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:p0QHj-pacman-f5si
+      - image: quay.io/redhat-appstudio/user-workload@sha256:079cf227ab4e744ef777b9c4125039b2cadd7362a80b3b76f0bf3f0cdedbccb9
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
